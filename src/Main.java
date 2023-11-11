@@ -30,13 +30,14 @@
 public class Main {
     public static void main(String[] args) {
         BmiService service = new BmiService();
+
         double height = 1.87; // Введите рост в метрах
         double weight = 98; // Введите вес в кг
 
         int bmi = service.calculate(height, weight);
 
-        System.out.println("При росте (в м): " + height);
-        System.out.println("    и весе (в кг): " + weight);
+        System.out.println("При росте: " + height + " м");
+        System.out.println("    и весе: " + weight + " кг");
         System.out.println("Индекс массы тела (body mass index) составил: " + bmi);
     }
 }
